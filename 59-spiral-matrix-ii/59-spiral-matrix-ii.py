@@ -19,10 +19,6 @@ class Solution:
         visited.add((0, 0))
         next_dir = Direction.RIGHT
         while True:
-            # print("###"*20)
-            # print(i, j)
-            # print(next_dir)
-            # print("###"*20)
             if next_dir is Direction.RIGHT:
                 j += 1
             elif next_dir is Direction.DOWN:
@@ -48,13 +44,7 @@ class Solution:
                 i = 0
                 next_dir = Direction.RIGHT
                 continue
-            
-            # print("***"*20)
-            # print(i, j)
-            # print(next_dir)
-            # print(matrix)
-            # print(visited)
-            # print("***"*20)
+
             if (i, j) not in visited:
                 visited.add((i, j))
                 matrix[i][j] = curr_num
